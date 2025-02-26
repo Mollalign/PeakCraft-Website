@@ -65,7 +65,7 @@
 }
 
 .card {
-  @apply relative flex flex-col px-12 py-24 items-center bg-[#1F2020] rounded-[14px] shadow-lg shadow-[#24f1ef]/50 w-[350px] text-white space-y-10 text-center mb-50;
+  @apply relative flex flex-col px-12 py-24 items-center bg-[#1F2020] rounded-[14px] shadow-lg shadow-[#24f1ef]/50 w-[300px] text-white space-y-10 text-center mb-50;
 }
 
 footer {
