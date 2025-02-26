@@ -7,7 +7,7 @@
   <title>Peak craft</title>
 </head>
 <body>
-  <nav class="bg-opacity-10 bg-black px-7 py-4 md:px-28 md:py-6 backdrop-blur-3xl fixed z-40 w-full">
+  <nav class="bg-opacity-10 bg-[] px-7 py-4 md:px-28 md:py-6 backdrop-blur-3xl w-full fixed">
     <!-- flex container -->
     <div class="flex items-center justify-between">
       <!-- logo -->
@@ -24,33 +24,314 @@
           Join Us
         </button>
       </div>
+
+      <!-- Hamburger icon -->
+      <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
     </div>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden">
+      <div id="menu" class="absolute text-white flex-col items-center self-end hidden py-10 mt-10 space-y-6 font-bold bg-[#1C356C] sm:w-auto sm:self-center text-2xl left-[250px] right-[70px] drop-shadow-md">
+        <a href="#">About Us</a>
+        <a href="#">Events</a>
+        <a href="#">Projects</a>
+        <a href="#">Domains</a>
+      </div>
+    </div> 
   </nav>
 
+ <main class="container-full">
   <!-- Hero Section -->
-  <section id="hero">
+  <section id="hero" class="pt-13">
     <!-- flex container -->
-    <div class="container flex flex-col p-6 mx-auto">
+    <div class="container flex flex-col p-6 mx-auto p-10 pt-20">
       <!-- image -->
       <div>
-        <img src="images/Motto.png" alt="">
+        <img src="images/Motto-Large.png" class="w-[400px]" alt="">
       </div> 
        <!-- paragraph -->
-      <p class="text-black text-2xl w-[400px] font-bold">
+      <p class="text-white mt-10 w-[370px] text-2xl  font-semibold">
         Join Hawassa University's vibrant community, where bold ideas spark, teamwork thrives, and we rise together!
       </p>
 
       <!-- button -->
       <div class="flex items-center mt-10 space-x-12">
-        <button class="px-14 py-3 rounded-full text-lg text-white text-center bg-[#F53A4C]">
+        <button class="px-20 py-4 rounded-full text-lg text-white text-center bg-[#F53A4C] font-bold">
           Apply
         </button>
 
-        <button class="px-14 py-3 rounded-full text-lg text-black text-center border-black border-[1px]">
+        <button class="px-14 py-3 rounded-full text-lg text-white text-center border-white border-[1px] font-bold">
          Learn More
         </button>
       </div>
     </div> 
   </section> 
+
+  <div class="flex">
+    <div class="bg-[#24F1EF] flex-4 h-3 "></div>
+    <div class="bg-[#FE942D] flex-3 h-3 "></div>
+    <div class="bg-[#F53A4C] flex-2 h-3 "></div>
+    <div class="bg-[#122C62] flex-1 h-3 "></div>
+  </div>
+
+  <!-- Leader border Section -->
+  <section id="leader" class="bg-[#1F2020]">
+    <!-- Flex container -->
+    <div class="container flex flex-col md:flex-row items-center justify-between px-6 py-10 mx-auto space-y-8 md:space-y-8">
+      <!-- left image -->
+      <div class="flex relative pt-10">
+        <!-- image -->
+        <div>
+          <img src="images/Earnit.png" class="w-[400px]">
+        </div>
+        <!-- Gif -->
+        <div class="gif absolute w-[85%]">
+          <img src="images/crown.gif" class="">
+        </div> 
+      </div> 
+
+      <div class="flex flex-col items-start space-y-10 w-[80%] md:w-[50%]">
+        <h1 class="font-alata font-bold text-5xl py-5 md:text-5xl text-white ">
+          Sharpen your skills and ascend the throne of success.
+        </h1>
+
+        <p class="text-white text-lg font-semibold ">
+          At Peak Craft, we blend competition with support in a fun, growth-focused environment. Join us to hone your skills and rise to the top with teams committed to achievements. Let’s build your legacy together!
+        </p>
+
+        <!-- button -->
+        <button class="flex items-center space-x-3 px-10 py-2 md:px-14 md:py-3 rounded-full text-xl text-white text-center border-white bg-[#FE942D] font-bold">
+          <span>Crown Bearers</span>
+          <img class="w-[50px]" src="images/RightArrow.png">
+        </button> 
+      </div>
+    </div> 
+  </section> 
+
+  <div class="bg-[#FE942D] flex-3 h-3 "></div>
+
+  <!-- peak domain section -->
+  <section id="leader" class="bg-[#1F2020]">
+    <!-- Flex container -->
+    <div class="container flex flex-col-reverse md:flex-row items-center justify-between px-6 py-10 mx-auto space-y-10 md:space-y-8">
+      <!-- left image -->
+
+      <div class="flex flex-col items-start space-y-10 w-[80%] md:w-[50%]">
+        <h1 class="font-alata font-bold text-5xl py-5 md:text-5xl text-white ">
+          Pick your Domain, Fuel Your Passion!
+        </h1>
+
+        <p class="text-white text-lg font-semibold ">
+          Whether it’s Development, Cybersecurity, or Robotics. Explore what excites you by joining our specialized domains, dive into engaging projects, and grow your skills with a supportive community. Let your interests lead the way!
+        </p>
+
+        <!-- button -->
+        <button class="flex items-center space-x-3 px-10 py-2 md:px-14 md:py-3 rounded-full text-xl text-white text-center border-white bg-[#24F1EF] font-bold">
+          <span>Explore Domains</span>
+          <img class="w-[50px]" src="images/RightArrow.png">
+        </button> 
+      </div>
+
+      <div class="flex relative md:pt-13 pr-10">
+        <!-- image -->
+        <div>
+          <img src="images/capsules.png" class="w-[400px]">
+        </div>
+      </div> 
+    </div> 
+  </section> 
+
+  <div class="bg-[#24F1EF] flex-2 h-3 "></div>
+
+  <!-- Join The team -->
+  <section id="leader" class="bg-[#1F2020]">
+    <!-- Flex container -->
+    <div class="container flex flex-col md:flex-row items-center justify-between px-6 py-10 mx-auto space-y-8 md:space-y-8">
+      <!-- left image -->
+      <div class="flex relative pt-10">
+        <!-- image -->
+        <div>
+          <img src="images/Disco.png" class="w-[400px]">
+        </div>
+      </div> 
+
+      <div class="flex flex-col items-start space-y-10 w-[80%] md:w-[50%]">
+        <h1 class="font-alata font-bold text-5xl py-5 md:text-5xl text-white ">
+          Get in on the Fun with Our Events!
+        </h1>
+
+        <p class="text-white text-lg">
+          Experience a blend of thrilling activities and engaging experiences. From lively socials to interactive workshops, our events promise a great time and unforgettable moments!
+        </p>
+
+        <!-- button -->
+        <button class="flex items-center space-x-3 px-10 py-2 md:px-14 md:py-3 rounded-full text-xl text-white text-center border-white bg-[#F53A4C] font-bold">
+          <span>Events Timeline</span>
+          <img class="w-[50px]" src="images/RightArrow.png">
+        </button> 
+      </div>
+    </div> 
+  </section>  
+
+  <div class="bg-[#F53A4C] flex-2 h-3 "></div>
+
+  <!-- Projects Section -->
+  <section id="leader" class="bg-[#1F2020] pt-10">
+    <!-- flex container -->
+    <div class="container flex flex-col items-center justify-center py-10 mx-auto space-y-8 md:space-y-8">
+      <!-- top image -->
+      <div class="mb-32 pb-20">
+        <!-- image -->
+        <div>
+          <img src="images/Projects.png" class="w-[400px] md:w-[500px]" alt="">
+        </div>
+        <!-- paragraph -->
+        <p class="text-white text-center text-2xl  font-semibold">
+          Take a look at some of our endeavors
+        </p> 
+      </div> 
+        
+      <!-- middle -->
+      <div class="flex flex-col items-center md:flex-row md:space-x-22">
+        <!-- card 1 -->
+        <div class="card">
+          <!-- image -->
+           <div>
+            <img src="images/chatbot.png" class="w-[220px] absolute -top-30 left-[50%] transform -translate-x-1/2">
+           </div>
+          <p class="text-lg">From Turing Tribe</p>
+          <p class="text-2xl font-bold">Natural Language Processing for Ethiopian Languages</p>
+          <p class="text-lg">
+            This project develops NLP tools for Ethiopian languages like Amharic and Afan Oromo, enabling better translation, speech recognition, and text processing to bridge the digital language gap.
+          </p>
+
+          <div class="font-bold text-xl absolute bottom-8 right-10">See More</div>
+        </div>
+
+        <!-- card 2 -->
+        <div class="card">
+          <!-- image -->
+           <div>
+            <img src="images/gear.png" class="w-[220px] absolute -top-30 left-[50%] transform -translate-x-1/2">
+           </div>
+          <p class="text-lg">From Machine Mavericks</p>
+          <p class="text-2xl font-bold">Autonomous Plant Caretaker</p>
+          <p class="text-lg">
+            Meet the Robot Plant Caretaker: a simple robot that automates watering, monitors soil moisture, and navigates between plants to keep your garden healthy with minimal effort.
+          </p>
+
+          <div class="font-bold text-xl absolute bottom-8 right-10">See More</div>
+        </div>
+
+        <!-- card 3 -->
+        <div class="card">
+          <!-- image -->
+           <div>
+            <img src="images/lock.png" class="w-[220px] absolute -top-30 left-[50%] transform -translate-x-1/2">
+           </div>
+          <p class="text-lg">From Cyber Crew</p>
+          <p class="text-2xl font-bold">Phishing Detection tool</p>
+          <p class="text-lg">
+            Introducing the Phishing Detection Tool: a smart solution that scans emails and websites to identify potential phishing attempts, alerting users in real-time to protect against fraud and identity theft.
+          </p>
+
+          <div class="font-bold text-xl absolute bottom-8 right-10">See More</div>
+        </div>
+      </div>
+    </div> 
+  </section> 
+
+
+  <div class="bg-[#122C62] flex-1 h-3 "></div>
+
+  <!-- final section -->   
+  <section id="leader" class="pt-15 bg-[#1F2020]">
+    <!-- Flex container -->
+    <div class="container flex flex-col-reverse md:flex-row items-center justify-between px-6 py-10 mx-auto space-y-10 md:space-y-8">
+      <!-- left image -->
+
+      <div class="flex flex-col items-start space-y-10 w-[80%] md:w-[50%]">
+        <h1 class="font-alata font-bold text-5xl py-5 md:text-5xl text-white ">
+          Come alive by joining our club
+        </h1>
+
+        <p class="text-white text-lg font-semibold ">
+          Let go of your zombie like state, shake things up, be part of our active community and reach for the peaks not 6 feet under. Don’t know what it takes to join us? Click below and find out.
+        </p>
+
+        <!-- button -->
+        <button class="flex items-center space-x-3 px-10 py-2 md:px-14 md:py-3 rounded-full text-xl text-white text-center border-white bg-[#818282] font-bold">
+          <span>Members' Criteria</span>
+          <img class="w-[50px]" src="images/RightArrow.png">
+        </button> 
+      </div>
+
+      <div class="flex relative md:pt-13 pr-10">
+        <!-- image -->
+        <div>
+          <img src="images/finalCTA.png" class="w-[400px]">
+        </div>
+      </div> 
+    </div> 
+  </section> 
+</main>  
+
+ <!-- Footer -->
+ <footer class="py-10 bg-[#1F2020]">
+  <!-- flex container -->
+  <div class="px-20 py-10 flex flex-col md:flex-row md:justify-between space-y-10 text-white">
+    <!-- first -->
+    <div class="text-white">
+      <h1 class="font-bold text-4xl">Still Got Questions?</h1>
+      <p class="text-lg mb-10">Send it here and we'll reply</p>
+       
+      <div class="relative border-white border-[1px] rounded w-full aspect-video p-5 mb-8">
+        <textarea placeholder="Your message" class="bg-transparent no-resize focus:outline-none w-full"></textarea>
+
+        <button>
+          <img src="images/send.png" class="w-[30px] h[30px] absolute bottom-6 right-8">
+        </button>
+      </div>
+    </div>
+
+    <!-- second -->
+    <div class="flex flex-col items-center p-5 space-y-10">
+      <p class="font-bold text-xl">Our Socials</p>
+      <!-- icons -->
+      <div class="flex items-center space-x-5">
+        <img src="images/send.png" class="w-[50px]">
+        <img src="images/LinkedIn.png" class="w-[50px]">
+        <img src="images/GitHub.png" class="w-[50px]">
+        <img src="images/Post.png" class="w-[50px]">
+      </div>
+      <!-- logo -->
+       <div>
+        <img src="images/hulogo.png" class="w-[150px]">
+       </div>
+    </div> 
+
+    <!-- final -->
+    <div class="p-5 flex flex-col items-center space-y-3">
+      <img src="images/logo+text.png" class="w-[200px]">
+      <p class="font-bold text-xl mb-10">Reach Peaks Upon Peaks!</p>
+      <p class="font-bold text-xl">Hawassa, Ethiopia,</p>
+      <p class="font-bold text-xl">Hawassa University,</p>
+      <p class="font-bold text-xl">Institute of Technology Campus</p>
+      <p class="font-bold text-xl">Faculty Head: +251922106610</p>
+      <p class="font-bold text-xl">Club President: +251911367837</p>
+    </div> 
+  </div>
+   <div class="flex flex-col justify-center items-center font-semibold text-lg text-white mt-24">
+    <p>Peak Craft Entity of Hawassa University</p>
+    <p>2024 All rights reserved</p>
+   </div> 
+ </footer> 
+  
+
+  <script src="js/script.js"></script>
 </body>
 </html>

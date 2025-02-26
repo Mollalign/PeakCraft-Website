@@ -1,5 +1,83 @@
 @import "tailwindcss";
 
 #hero {
-  
+  background-image: url(../images/Mountain.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
 }
+
+.gif {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* Hamburger menu */
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 17px;
+  transition: all 0.5s;
+  position: relative; 
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: white;
+  transform: rotate(0deg);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+.card {
+  @apply relative flex flex-col px-12 py-24 items-center bg-[#1F2020] rounded-[14px] shadow-lg shadow-[#24f1ef]/50 w-[350px] text-white space-y-10 text-center mb-50;
+}
+
+footer {
+  background-image: url(../images/Footerbg-small.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+ @media (min-width: 508px) {
+  footer {
+    background-image: url(../images/Footerbg.png);
+  }
+ } 
